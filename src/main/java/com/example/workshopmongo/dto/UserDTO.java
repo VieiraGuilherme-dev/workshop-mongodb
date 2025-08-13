@@ -1,7 +1,6 @@
 package com.example.workshopmongo.dto;
 
 import com.example.workshopmongo.domain.User;
-
 import java.io.Serializable;
 
 public class UserDTO implements Serializable {
@@ -11,11 +10,10 @@ public class UserDTO implements Serializable {
     private String name;
     private String email;
 
-    // CONSTRUTOR VAZIO ADICIONADO
-    public UserDTO(){
+    public UserDTO() {
     }
 
-    public UserDTO(User obj){
+    public UserDTO(User obj) {
         id = obj.getId();
         name = obj.getName();
         email = obj.getEmail();

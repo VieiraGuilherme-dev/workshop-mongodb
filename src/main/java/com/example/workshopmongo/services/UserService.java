@@ -1,6 +1,7 @@
 package com.example.workshopmongo.services;
+
 import com.example.workshopmongo.domain.User;
-import com.example.workshopmongo.dto.UserDTO; // Added this import
+import com.example.workshopmongo.dto.UserDTO;
 import com.example.workshopmongo.repository.UserRepository;
 import com.example.workshopmongo.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,20 @@ public class UserService {
         repo.deleteById(id);
     }
 
+    public User update(User obj) {
+        Optional<User> newObj = repo.findById(obj.getId());
+        if (newObj.isEmpty()) {
+            throw new ObjectNotFoundException("Objeto nao encontrado!");
+        }
+        User userToUpdate = newObj.get();
+        updateData(userToUpdate, obj);
+        return repo.save(userToUpdate);
+    }
+
+    private void updateData(User newObj, User obj1) {
+        newObj.setName(obj1.getName());
+        newObj.setEmail(obj1.getEmail());
+    }
 
     public User fromDTO(UserDTO objDTO) {
         return new User(objDTO.getId(), objDTO.getName(), objDTO.getEmail());
