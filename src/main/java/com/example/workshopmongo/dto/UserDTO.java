@@ -11,6 +11,10 @@ public class UserDTO implements Serializable {
     private String name;
     private String email;
 
+    // CONSTRUTOR VAZIO ADICIONADO
+    public UserDTO(){
+    }
+
     public UserDTO(User obj){
         id = obj.getId();
         name = obj.getName();
