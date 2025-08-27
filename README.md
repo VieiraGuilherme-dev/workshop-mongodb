@@ -53,4 +53,4 @@ Este projeto está aberto a contribuições. Sinta-se à vontade para abrir uma 
 
 ## ✉️ Contato
 
-Seu nome - [Seu email ou LinkedIn]
+Guilherme Vieira - gv524003@gmail.com
