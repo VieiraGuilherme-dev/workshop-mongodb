@@ -36,14 +36,7 @@ Banco de Dados MongoDB em Execução
 
 A imagem abaixo mostra a base de dados workshop_mongo rodando no MongoDB Compass, com as coleções post e user, exibindo documentos e seus relacionamentos.
 
-
-
-
-
-
-
-
-
+![Banco de Dados MongoDB](src/images/Captura%20de%20tela%202025-08-16%20114910.png)
 
 
 ---
