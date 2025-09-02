@@ -32,6 +32,21 @@ O projeto utiliza o **Spring Data MongoDB** para interagir com o banco de dados.
 * **`fullSearch`**: Uma consulta complexa que busca postagens por texto no título, corpo ou comentários, em um intervalo de datas especificado.
 
 ---
+Banco de Dados MongoDB em Execução
+
+A imagem abaixo mostra a base de dados workshop_mongo rodando no MongoDB Compass, com as coleções post e user, exibindo documentos e seus relacionamentos.
+
+
+
+
+
+
+
+
+
+
+
+---
 
 ## 📁 Como Rodar o Projeto
 
